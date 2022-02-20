@@ -10,10 +10,10 @@ pipeline {
         }
     }    
 
-        stage('Build') {
+        stage("Build") {
             steps {
                 dir("/var/lib/jenkins/workspace/JAVA-PROJECT/my-app") {
-                sh 'mvn -B -DskipTests clean package'
+                sh "mvn -B -DskipTests clean package"
                 }
             }
     }
